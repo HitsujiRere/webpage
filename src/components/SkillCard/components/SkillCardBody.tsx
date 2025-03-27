@@ -18,7 +18,11 @@ export const SkillCardBody = ({
   return (
     <div className="card-body items-center justify-between gap-2">
       {icon}
-      {typeof name === "string" ? <span>{name}</span> : name}
+      {typeof name === "string" ? (
+        <span className="text-base">{name}</span>
+      ) : (
+        name
+      )}
       {stars !== undefined && <Stars stars={stars} />}
       {children}
     </div>

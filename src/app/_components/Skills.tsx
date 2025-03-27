@@ -3,6 +3,7 @@ import { PiFileCSharp, PiLaptop } from "react-icons/pi";
 import {
   SiC,
   SiCplusplus,
+  SiCss3,
   SiJavascript,
   SiProcessingfoundation,
   SiPython,
@@ -16,7 +17,7 @@ import atcoderLogo from "~/public/logos/atcoder.png";
 
 export const Skills = () => {
   return (
-    <div className="card card-border border-base-300 bg-base-100">
+    <div className="card card-lg card-border border-base-300 bg-base-100">
       <div className="card-body @container gap-4">
         <h2 className="flex items-center gap-2">
           <PiLaptop className="text-2xl" />
@@ -52,7 +53,7 @@ export const Skills = () => {
           <SkillCard
             name="CSS"
             stars={3}
-            icon={<SiTypescript className="fill-accent text-3xl" />}
+            icon={<SiCss3 className="fill-accent text-3xl" />}
           />
           <SkillCard
             name="Python"
@@ -84,7 +85,7 @@ export const Skills = () => {
             icon={<Image src={atcoderLogo} alt="AtCoder" height={30} />}
             href="https://atcoder.jp/users/Deji"
           >
-            <span>最高レート：1455</span>
+            <span className="text-base">最高レート：1455</span>
           </SkillCard>
         </div>
       </div>

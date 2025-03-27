@@ -2,7 +2,7 @@ import { PiBuildingOffice } from "react-icons/pi";
 
 export const Jobs = () => {
   return (
-    <div className="card card-border border-base-300 bg-base-100">
+    <div className="card card-lg card-border border-base-300 bg-base-100">
       <div className="card-body @container gap-4">
         <h2 className="flex items-center gap-2">
           <PiBuildingOffice className="text-2xl" />

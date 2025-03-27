@@ -12,26 +12,29 @@ export type TimelineProps = {
 
 export const Timeline = ({ events }: TimelineProps) => {
   return (
-    <ul className="timeline @max-4xl:timeline-vertical justify-center @max-4xl:[--timeline-col-start:4rem]">
+    <ul className="timeline @max-2xl:timeline-vertical justify-center @max-2xl:[--timeline-col-start:4rem]">
+      {/* <ul className="timeline justify-center"> */}
       {events.map((event, index) => (
         <li key={event.time}>
           {index > 0 && <hr />}
-          <div className="timeline-start">{event.time}</div>
+          <div className="timeline-start text-base">{event.time}</div>
           <div className="timeline-middle">
             {event.isPast === true || event.isPast === undefined ? (
-              <PiCheckCircleFill />
+              <PiCheckCircleFill className="text-base" />
             ) : (
-              <PiCircle />
+              <PiCircle className="text-base" />
             )}
           </div>
-          <div className="timeline-end timeline-box">{event.title}</div>
+          <div className="timeline-end timeline-box text-base">
+            {event.title}
+          </div>
           <hr />
         </li>
       ))}
       <li>
         <hr />
         <div className="timeline-start">
-          <PiPersonSimpleRun className="h-6 w-6 @max-4xl:rotate-y-180" />
+          <PiPersonSimpleRun className="h-6 w-6 @max-2xl:rotate-y-180" />
         </div>
         <div className="timeline-middle">
           <PiCheckCircleFill className="invisible" />

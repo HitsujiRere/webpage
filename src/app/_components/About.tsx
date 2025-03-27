@@ -5,7 +5,7 @@ import { hasNewFiscalYearStarted } from "~/utils/hasNewFiscalYearStarted";
 
 export const About = () => {
   return (
-    <div className="card card-border border-base-300 bg-base-100">
+    <div className="card card-border card-lg border-base-300 bg-base-100">
       <div className="card-body @container gap-4">
         <div className="flex flex-wrap justify-between gap-2">
           <h1 className="flex items-baseline gap-2">
@@ -63,15 +63,13 @@ export const About = () => {
             ],
             ["すきな動物：ひつじ🐏", "Favorite animal: Sheep! 🐏"],
           ]}
-          gridClassName="@4xl:grid-cols-2"
+          gridClassName="@2xl:grid-cols-2"
         />
 
         <Timeline
           events={[
             { time: "2018/04", title: "■■工業高等専門学校 入学" },
-            { time: "2023/03", title: "■■工業高等専門学校 卒業" },
             { time: "2023/04", title: "■■大学 ３年次編入学" },
-            { time: "2025/03", title: "■■大学 卒業" },
             {
               time: "2025/04",
               title: "■■大学大学院 入学",
