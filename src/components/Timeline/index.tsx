@@ -4,7 +4,6 @@ import {
   PersonSimpleRun,
 } from "@phosphor-icons/react/dist/ssr";
 import React from "react";
-import type CSS from "csstype";
 
 export type Event = {
   time: string;
@@ -17,14 +16,10 @@ export type TimelineProps = {
 };
 
 export const Timeline = React.memo(({ events }: TimelineProps) => {
-  const listStyle: CSS.Properties = {
-    "--timeline-col-start": "4rem",
-  };
-
   return (
-    <ul className="timeline @max-4xl:timeline-vertical justify-center">
+    <ul className="timeline @max-4xl:timeline-vertical justify-center @max-4xl:[--timeline-col-start:4rem]">
       {events.map((event, index) => (
-        <li key={event.time} style={listStyle}>
+        <li key={event.time}>
           {index > 0 && <hr />}
           <div className="timeline-start">{event.time}</div>
           <div className="timeline-middle">
@@ -38,7 +33,7 @@ export const Timeline = React.memo(({ events }: TimelineProps) => {
           <hr />
         </li>
       ))}
-      <li style={listStyle}>
+      <li>
         <hr />
         <div className="timeline-start">
           <PersonSimpleRun className="h-6 w-6 @max-4xl:rotate-y-180" />

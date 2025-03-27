@@ -36,8 +36,8 @@ export const About = () => {
         <GridList
           contents={[
             [
-              "日本生まれ日本育ちの大学院1年生",
-              "A first-year graduate student born and raised in Japan.",
+              "日本生まれ日本育ちの大学院1年生（2025/04現在）",
+              "A first-year graduate student (as of April 2025) in Japan.",
             ],
             [
               "情報系．おおよそプログラマー",
@@ -62,11 +62,11 @@ export const About = () => {
 
         <Timeline
           events={[
-            { time: "2018/4", title: "■■工業高等専門学校 入学" },
-            { time: "2023/3", title: "■■工業高等専門学校 卒業" },
-            { time: "2023/4", title: "■■大学 ３年次編入学" },
-            { time: "2025/3", title: "■■大学 卒業" },
-            { time: "2025/4", title: "■■大学大学院 入学" },
+            { time: "2018/04", title: "■■工業高等専門学校 入学" },
+            { time: "2023/03", title: "■■工業高等専門学校 卒業" },
+            { time: "2023/04", title: "■■大学 ３年次編入学" },
+            { time: "2025/03", title: "■■大学 卒業" },
+            { time: "2025/04", title: "■■大学大学院 入学" },
           ]}
         />
       </div>
