@@ -1,5 +1,13 @@
 import type { Metadata } from "next";
+import { Zen_Maru_Gothic } from "next/font/google";
 import "./globals.css";
+import classNames from "classnames";
+
+const geistMono = Zen_Maru_Gothic({
+  weight: "400",
+  variable: "--font-zen-maru-gothic",
+  subsets: [],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -13,7 +21,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body
+        className={classNames("min-h-screen bg-base-200", geistMono.className)}
+      >
+        {children}
+      </body>
     </html>
   );
 }

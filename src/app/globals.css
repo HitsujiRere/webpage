@@ -1,1 +1,5 @@
 @import "tailwindcss";
+@plugin "daisyui" {
+  /* biome-ignore lint/correctness/noUnknownProperty: daisyui use property themes */
+  themes: caramellatte --default;
+}
