@@ -4,7 +4,7 @@ import "./globals.css";
 import classNames from "classnames";
 
 const geistMono = Zen_Maru_Gothic({
-  weight: "400",
+  weight: ["400", "700"],
   variable: "--font-zen-maru-gothic",
   subsets: [],
 });
