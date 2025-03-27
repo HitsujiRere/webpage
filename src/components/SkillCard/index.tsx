@@ -9,7 +9,7 @@ export type SkillCardProps = SkillCardBodyProps & {
 };
 
 export const SkillCard = ({ href, ...props }: SkillCardProps) => {
-  const baseClassName = "card card-border card-sm border-base-300 bg-base-300";
+  const baseClassName = "card card-sm bg-base-300";
 
   if (href !== undefined) {
     return (

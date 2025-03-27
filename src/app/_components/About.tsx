@@ -1,6 +1,7 @@
 import { PiGithubLogo, PiTwitterLogo } from "react-icons/pi";
 import { GridList } from "~/components/GridList";
 import { Timeline } from "~/components/Timeline";
+import { hasNewFiscalYearStarted } from "~/utils/hasNewFiscalYearStarted";
 
 export const About = () => {
   return (
@@ -35,10 +36,15 @@ export const About = () => {
 
         <GridList
           contents={[
-            [
-              "日本生まれ日本育ちの大学院1年生（2025/04現在）",
-              "A first-year graduate student (as of April 2025) in Japan.",
-            ],
+            hasNewFiscalYearStarted()
+              ? [
+                  "日本生まれ日本育ちの大学院1年生（2025/04現在）",
+                  "A first-year graduate student (as of April 2025) in Japan.",
+                ]
+              : [
+                  "日本生まれ日本育ちの大学4年生（2025/03現在）",
+                  "A fourth-year university student (as of March 2025) in Japan.",
+                ],
             [
               "情報系．おおよそプログラマー",
               "Specializing in information technology, roughly a programmer.",
@@ -66,7 +72,11 @@ export const About = () => {
             { time: "2023/03", title: "■■工業高等専門学校 卒業" },
             { time: "2023/04", title: "■■大学 ３年次編入学" },
             { time: "2025/03", title: "■■大学 卒業" },
-            { time: "2025/04", title: "■■大学大学院 入学" },
+            {
+              time: "2025/04",
+              title: "■■大学大学院 入学",
+              isPast: hasNewFiscalYearStarted(),
+            },
           ]}
         />
       </div>
