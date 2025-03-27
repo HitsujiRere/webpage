@@ -1,4 +1,3 @@
-import React from "react";
 import { PiCheckCircleFill, PiCircle, PiPersonSimpleRun } from "react-icons/pi";
 
 export type Event = {
@@ -11,7 +10,7 @@ export type TimelineProps = {
   events: Event[];
 };
 
-export const Timeline = React.memo(({ events }: TimelineProps) => {
+export const Timeline = ({ events }: TimelineProps) => {
   return (
     <ul className="timeline @max-4xl:timeline-vertical justify-center @max-4xl:[--timeline-col-start:4rem]">
       {events.map((event, index) => (
@@ -40,4 +39,4 @@ export const Timeline = React.memo(({ events }: TimelineProps) => {
       </li>
     </ul>
   );
-});
+};

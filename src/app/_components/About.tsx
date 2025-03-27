@@ -55,7 +55,7 @@ export const About = () => {
               "すきな言語：TypeScript, C++",
               "Favorite programming languages: TypeScript, C++.",
             ],
-            ["すきな動物：ひつじ🐏", "Favorite animal: Sheep 🐏."],
+            ["すきな動物：ひつじ🐏", "Favorite animal: Sheep! 🐏"],
           ]}
           gridClassName="@4xl:grid-cols-2"
         />
