@@ -1,9 +1,5 @@
-import {
-  CheckCircle,
-  Circle,
-  PersonSimpleRun,
-} from "@phosphor-icons/react/dist/ssr";
 import React from "react";
+import { PiCheckCircleFill, PiCircle, PiPersonSimpleRun } from "react-icons/pi";
 
 export type Event = {
   time: string;
@@ -24,9 +20,9 @@ export const Timeline = React.memo(({ events }: TimelineProps) => {
           <div className="timeline-start">{event.time}</div>
           <div className="timeline-middle">
             {event.isPast === true || event.isPast === undefined ? (
-              <CheckCircle weight="fill" />
+              <PiCheckCircleFill />
             ) : (
-              <Circle />
+              <PiCircle />
             )}
           </div>
           <div className="timeline-end timeline-box">{event.title}</div>
@@ -36,10 +32,10 @@ export const Timeline = React.memo(({ events }: TimelineProps) => {
       <li>
         <hr />
         <div className="timeline-start">
-          <PersonSimpleRun className="h-6 w-6 @max-4xl:rotate-y-180" />
+          <PiPersonSimpleRun className="h-6 w-6 @max-4xl:rotate-y-180" />
         </div>
         <div className="timeline-middle">
-          <CheckCircle weight="fill" className="invisible" />
+          <PiCheckCircleFill className="invisible" />
         </div>
       </li>
     </ul>

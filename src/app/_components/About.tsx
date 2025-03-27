@@ -1,4 +1,4 @@
-import { GithubLogo, TwitterLogo } from "@phosphor-icons/react/dist/ssr";
+import { PiGithubLogo, PiTwitterLogo } from "react-icons/pi";
 import { GridList } from "~/components/GridList";
 import { Timeline } from "~/components/Timeline";
 
@@ -18,7 +18,7 @@ export const About = () => {
               rel="noreferrer"
             >
               <button type="button" className="btn btn-square">
-                <TwitterLogo className="text-xl" />
+                <PiTwitterLogo className="text-xl" />
               </button>
             </a>
             <a
@@ -27,7 +27,7 @@ export const About = () => {
               rel="noreferrer"
             >
               <button type="button" className="btn btn-square">
-                <GithubLogo className="text-xl" />
+                <PiGithubLogo className="text-xl" />
               </button>
             </a>
           </div>
