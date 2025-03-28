@@ -2,6 +2,7 @@ import { About } from "./_components/About";
 import { Awards } from "./_components/Awards";
 import { Jobs } from "./_components/Jobs";
 import { Skills } from "./_components/Skills";
+import { Works } from "./_components/Works";
 
 export default function Home() {
   return (
@@ -13,6 +14,8 @@ export default function Home() {
       <Skills />
 
       <Jobs />
+
+      <Works />
     </main>
   );
 }
