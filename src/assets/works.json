@@ -1,167 +1,228 @@
 [
   {
+    "id": "my-webpage-v5",
+    "name": "My Portfolio v5",
+    "explain": "自分のウェブページ ver.5",
+    "coverImage": "/works-img/my-webpage/v5.png",
+    "details": {
+      "explains": [
+        "自分についてや、今まで作った作品をまとめたウェブページ Version.5です。",
+        "シンプルに整理し、見やすく作ることができました。"
+      ],
+      "technologies": ["Next.js", "React", "Typescript", "Tailwind CSS"],
+      "images": ["/works-img/my-webpage/v5.png"]
+    }
+  },
+  {
     "id": "scratch2verilog",
     "name": "Scratch to Verilog HDL",
-    "explain": "ビジュアルプログラミングが行えるScratch上でFPGAのハードウェア記述言語の1つであるVerilog HDKの自動合成を行う拡張機能です。",
-    "hasDetailPage": true,
-    "language": "JavaScript",
-    "feeling": "工業高等専門学校の卒業研究として行いました。",
-    "linkWork": "https://xcratch.github.io/editor/#https://HitsujiRere.github.io/scratch2verilog/projects/example.sb3",
-    "linkGitHub": "https://github.com/HitsujiRere/scratch2verilog",
+    "explain": "Scratch上でハードウェア記述言語Verilog-HDLの自動合成を行える拡張機能",
     "coverImage": "/works-img/scratch2verilog/logo.png",
-    "images": [
-      "/works-img/scratch2verilog/presentation (1).png",
-      "/works-img/scratch2verilog/presentation (2).png",
-      "/works-img/scratch2verilog/presentation (3).png",
-      "/works-img/scratch2verilog/presentation (4).png",
-      "/works-img/scratch2verilog/presentation (5).png",
-      "/works-img/scratch2verilog/presentation (6).png",
-      "/works-img/scratch2verilog/presentation (7).png",
-      "/works-img/scratch2verilog/presentation (8).png",
-      "/works-img/scratch2verilog/presentation (9).png",
-      "/works-img/scratch2verilog/presentation (10).png",
-      "/works-img/scratch2verilog/presentation (11).png",
-      "/works-img/scratch2verilog/presentation (12).png",
-      "/works-img/scratch2verilog/presentation (13).png",
-      "/works-img/scratch2verilog/presentation (14).png",
-      "/works-img/scratch2verilog/presentation (15).png",
-      "/works-img/scratch2verilog/presentation (16).png"
-    ]
+    "details": {
+      "explains": [
+        "ビジュアルプログラミングが行えるScratch上で、FPGAのハードウェア記述言語の1つであるVerilog-HDLの自動合成を行う拡張機能です。",
+        "高専の卒業研究として行いました。"
+      ],
+      "technologies": ["JavaScript"],
+      "linkForWork": "https://xcratch.github.io/editor/#https://HitsujiRere.github.io/scratch2verilog/projects/example.sb3",
+      "linkForRepository": "https://github.com/HitsujiRere/scratch2verilog",
+      "images": [
+        "/works-img/scratch2verilog/presentation (1).png",
+        "/works-img/scratch2verilog/presentation (2).png",
+        "/works-img/scratch2verilog/presentation (3).png",
+        "/works-img/scratch2verilog/presentation (4).png",
+        "/works-img/scratch2verilog/presentation (5).png",
+        "/works-img/scratch2verilog/presentation (6).png",
+        "/works-img/scratch2verilog/presentation (7).png",
+        "/works-img/scratch2verilog/presentation (8).png",
+        "/works-img/scratch2verilog/presentation (9).png",
+        "/works-img/scratch2verilog/presentation (10).png",
+        "/works-img/scratch2verilog/presentation (11).png",
+        "/works-img/scratch2verilog/presentation (12).png",
+        "/works-img/scratch2verilog/presentation (13).png",
+        "/works-img/scratch2verilog/presentation (14).png",
+        "/works-img/scratch2verilog/presentation (15).png",
+        "/works-img/scratch2verilog/presentation (16).png"
+      ]
+    }
   },
   {
     "id": "time-calc",
     "name": "時間計算ツール",
-    "explain": "時間を式として計算するツールです。",
-    "hasDetailPage": true,
-    "language": "Typescript",
-    "framework": "React, Peggy",
-    "feeling": "自分用のサイトです。\nlocalstorageによる履歴保存機能があります。",
-    "linkWork": "https://hitsujirere.github.io/time-calc",
-    "linkGitHub": "https://github.com/HitsujiRere/time-calc",
+    "explain": "時間計算するツール",
     "coverImage": "/works-img/time-calc.png",
-    "images": ["/works-img/time-calc.png"]
+    "details": {
+      "explains": [
+        "自分用に作成した、時間計算を簡単にするための電卓です。",
+        "'Scratch to Verilog HDL' を作る際に使用したPeggyを学ぶために作りました。"
+      ],
+      "technologies": ["Typescript", "React"],
+      "linkForWork": "https://hitsujirere.github.io/time-calc",
+      "linkForRepository": "https://github.com/HitsujiRere/time-calc",
+      "images": ["/works-img/time-calc.png"]
+    }
   },
   {
-    "id": "my-webpage",
-    "name": "My Portfolio by Next.js",
-    "explain": "自分についてや、今まで作った作品をまとめたウェブページです。",
-    "hasDetailPage": true,
-    "language": "Typescript",
-    "framework": "Next.js, Tailwind CSS, p5.js",
-    "feeling": "ver2.0\n以前作成したウェブページのサイトデザインを一新し、全体的に明るくなりました。\nver1.0自分のウェブページを作るのは3回目。\nNext.js と Tailwind CSS を使えるようになったので、これらを駆使しておしゃれに作ることができました。",
-    "linkWork": "https://hitsujirere.github.io",
-    "linkGitHub": "https://github.com/HitsujiRere/hitsujirere.github.io",
-    "coverImage": "/works-img/my-webpage/v2.png",
-    "images": ["/works-img/my-webpage/v1.png"]
+    "id": "my-webpage-v4",
+    "name": "My Portfolio v4",
+    "explain": "自分のウェブページ ver.4",
+    "coverImage": "/works-img/my-webpage/v4.png",
+    "details": {
+      "explains": [
+        "自分についてや、今まで作った作品をまとめたウェブページ Version.4です。",
+        "以前作成したウェブページのサイトデザインを一新し、全体的に明るくなりました。"
+      ],
+      "technologies": [
+        "Next.js",
+        "React",
+        "Typescript",
+        "Tailwind CSS",
+        "p5.js"
+      ],
+      "images": ["/works-img/my-webpage/v4.png"]
+    }
   },
   {
     "id": "logic-connect-block",
     "name": "Logic Connect Block",
     "explain": "学校のシステム設計演習にてチーム制作した、論理回路を直観的に組み立てられる「ブロック」と、AtTinyブロック用のプログラムを自動生成できる「Webシミュレータ」です。",
-    "hasDetailPage": true,
-    "charge": "回路作製補助, 資料作製, Webシミュレータ製作",
-    "language": "C#, JavaScript",
-    "framework": "Unity, WebAsembly",
-    "feeling": "3人でのチーム制作でしたが、それぞれの長所を活かすことができ、当初の計画よりも非常に良いものを生み出すことができ、とても楽しかったです。",
-    "linkWork": "https://hitsujirere.github.io/LogicConnectBlockSim/",
-    "linkGitHub": "https://github.com/HitsujiRere/LogicConnectBlockSim",
     "coverImage": "/works-img/LogicConnectBlock/cover.jpg",
-    "images": [
-      "/works-img/LogicConnectBlock/cover.jpg",
-      "/works-img/LogicConnectBlock/web-sim.png",
-      "/works-img/LogicConnectBlock/presentation (1).png",
-      "/works-img/LogicConnectBlock/presentation (2).png",
-      "/works-img/LogicConnectBlock/presentation (3).png",
-      "/works-img/LogicConnectBlock/presentation (4).png",
-      "/works-img/LogicConnectBlock/presentation (5).png",
-      "/works-img/LogicConnectBlock/presentation (6).png",
-      "/works-img/LogicConnectBlock/presentation (7).png",
-      "/works-img/LogicConnectBlock/presentation (8).png",
-      "/works-img/LogicConnectBlock/presentation (9).png",
-      "/works-img/LogicConnectBlock/presentation (10).png",
-      "/works-img/LogicConnectBlock/presentation (11).png",
-      "/works-img/LogicConnectBlock/presentation (12).png",
-      "/works-img/LogicConnectBlock/presentation (13).png",
-      "/works-img/LogicConnectBlock/presentation (14).png",
-      "/works-img/LogicConnectBlock/presentation (15).png",
-      "/works-img/LogicConnectBlock/presentation (16).png",
-      "/works-img/LogicConnectBlock/presentation (17).png",
-      "/works-img/LogicConnectBlock/presentation (18).png",
-      "/works-img/LogicConnectBlock/presentation (19).png"
-    ]
+    "details": {
+      "explains": [
+        "学校のシステム設計演習にてチーム制作した、論理回路を直観的に組み立てられる「ブロック」と、AtTinyブロック用のプログラムを自動生成できる「Webシミュレータ」です。",
+        "3人でのチーム制作でしたが、それぞれの長所を活かすことができ、当初の計画よりも非常に良いものを生み出すことができ、とても楽しかったです。"
+      ],
+      "technologies": ["C#", "JavaScript", "Unity", "WebAsembly"],
+      "linkForWork": "https://hitsujirere.github.io/LogicConnectBlockSim/",
+      "linkForRepository": "https://github.com/HitsujiRere/LogicConnectBlockSim",
+      "images": [
+        "/works-img/LogicConnectBlock/cover.jpg",
+        "/works-img/LogicConnectBlock/web-sim.png",
+        "/works-img/LogicConnectBlock/presentation (1).png",
+        "/works-img/LogicConnectBlock/presentation (2).png",
+        "/works-img/LogicConnectBlock/presentation (3).png",
+        "/works-img/LogicConnectBlock/presentation (4).png",
+        "/works-img/LogicConnectBlock/presentation (5).png",
+        "/works-img/LogicConnectBlock/presentation (6).png",
+        "/works-img/LogicConnectBlock/presentation (7).png",
+        "/works-img/LogicConnectBlock/presentation (8).png",
+        "/works-img/LogicConnectBlock/presentation (9).png",
+        "/works-img/LogicConnectBlock/presentation (10).png",
+        "/works-img/LogicConnectBlock/presentation (11).png",
+        "/works-img/LogicConnectBlock/presentation (12).png",
+        "/works-img/LogicConnectBlock/presentation (13).png",
+        "/works-img/LogicConnectBlock/presentation (14).png",
+        "/works-img/LogicConnectBlock/presentation (15).png",
+        "/works-img/LogicConnectBlock/presentation (16).png",
+        "/works-img/LogicConnectBlock/presentation (17).png",
+        "/works-img/LogicConnectBlock/presentation (18).png",
+        "/works-img/LogicConnectBlock/presentation (19).png"
+      ]
+    }
+  },
+  {
+    "id": "my-webpage-v3",
+    "name": "My Portfolio v3",
+    "explain": "自分のウェブページ ver.3",
+    "coverImage": "/works-img/my-webpage/v3.png",
+    "details": {
+      "explains": [
+        "自分についてや、今まで作った作品をまとめたウェブページ Version.3です。",
+        "Next.jsやTailwind CSSを使えるようになったので、これらを駆使しておしゃれに作ることができました。"
+      ],
+      "technologies": [
+        "Next.js",
+        "React",
+        "Typescript",
+        "Tailwind CSS",
+        "p5.js"
+      ],
+      "images": ["/works-img/my-webpage/v3.png"]
+    }
   },
   {
     "id": "oshaberu",
     "name": "おしゃべる",
-    "explain": "自由な声とおしゃべりできるスマートスピーカーの追加コンテンツです。DCON2021にて発表し、7位を獲得しました。",
-    "hasDetailPage": true,
-    "charge": "音声合成, APIサーバ",
-    "language": "JavaScript, Python",
-    "framework": "Node.js, Tacotron2",
-    "feeling": "初めて深層学習を用いたましたが、うまくチームメンバーなどの音声を合成することができました。",
-    "linkGitHub": "https://github.com/HitsujiRere/hitsujirere.github.io",
+    "explain": "自由な声とおしゃべりできるスマートスピーカー",
     "coverImage": "/works-img/oshaberu/logo.png",
-    "images": [
-      "/works-img/oshaberu/cover.png",
-      "/works-img/oshaberu/system.png",
-      "/works-img/oshaberu/voice-1.png",
-      "/works-img/oshaberu/voice-2.png"
-    ]
+    "details": {
+      "explains": [
+        "自由な声とおしゃべりできるスマートスピーカーの追加コンテンツです。",
+        "DCON2021にて発表し、7位を獲得しました。",
+        "初めて深層学習を用いたましたが、うまくチームメンバーなどの音声を合成することができました。"
+      ],
+      "technologies": ["JavaScript", "Python", "Tacotron2"],
+      "linkForRepository": "https://github.com/HitsujiRere/hitsujirere.github.io",
+      "images": [
+        "/works-img/oshaberu/cover.png",
+        "/works-img/oshaberu/system.png",
+        "/works-img/oshaberu/voice-1.png",
+        "/works-img/oshaberu/voice-2.png"
+      ]
+    }
   },
   {
     "id": "twattaa",
     "name": "Twattaa",
-    "explain": "データベースの授業の演習にて作成・発表した匿名掲示板です。",
-    "hasDetailPage": true,
-    "language": "JavaScript, PostgreSQL",
-    "framework": "Node.js, Vue.js, Socket.IO",
-    "linkGitHub": "https://github.com/HitsujiRere/Twattaa",
+    "explain": "匿名掲示板",
     "coverImage": "/works-img/twattaa/1.png",
-    "images": ["/works-img/twattaa/1.png", "/works-img/twattaa/2.png"]
+    "details": {
+      "explains": [
+        "データベースの授業の演習にて作成・発表した匿名掲示板です。"
+      ],
+      "technologies": ["JavaScript", "Vue.js", "PostgreSQL", "Socket.IO"],
+      "linkForRepository": "https://github.com/HitsujiRere/Twattaa",
+      "images": ["/works-img/twattaa/1.png", "/works-img/twattaa/2.png"]
+    }
   },
   {
     "id": "learn-processing",
     "name": "Learn Processing more",
-    "explain": "部内用のより発展的なProcessingの解説です。\n配列, リスト, クラスについて説明しています。",
-    "hasDetailPage": true,
-    "linkWork": "https://github.com/HitsujiRere/LearnProcessing#readme",
+    "explain": "部内用の発展的なProcessingの解説",
     "coverImage": "/works-img/LearnProcessing.png",
-    "images": ["/works-img/LearnProcessing.png"]
+    "details": {
+      "explains": [
+        "部内用の発展的なProcessingの解説です。",
+        "配列, リスト, クラスについて説明しています。"
+      ],
+      "technologies": [],
+      "linkForWork": "https://github.com/HitsujiRere/LearnProcessing#readme",
+      "images": ["/works-img/LearnProcessing.png"]
+    }
   },
   {
     "id": "fall-texts",
     "name": "Fall Texts",
-    "explain": "みんなで言葉を降らせよう",
-    "hasDetailPage": false
+    "explain": "みんなで言葉を降らせよう"
   },
   {
     "id": "shimale",
     "name": "shimale",
-    "hasDetailPage": false,
+    "explain": "",
     "coverImage": "/works-img/shimale_logo.png"
   },
   {
     "id": "siritori-vs",
     "name": "siritori-vs",
-    "hasDetailPage": false,
+    "explain": "",
     "coverImage": "/works-img/siritoriVS.jpg"
   },
   {
     "id": "hex-calcurator",
     "name": "hex-calcurator",
-    "hasDetailPage": false,
+    "explain": "",
     "coverImage": "/works-img/HexCalcurator.png"
   },
   {
     "id": "just10game",
     "name": "just10game",
-    "hasDetailPage": false,
+    "explain": "",
     "coverImage": "/works-img/just10game.png"
   },
   {
     "id": "yudetamago2",
     "name": "yudetamago2",
-    "hasDetailPage": false,
+    "explain": "",
     "coverImage": "/works-img/yudetamago2.png"
   }
 ]

@@ -10,7 +10,7 @@ export type WorkCardProps = {
 export const WorkCard = ({ work }: WorkCardProps) => {
   const baseClassName = "card card-sm h-full w-full bg-base-300";
 
-  if (work.hasDetailPage) {
+  if (work.details) {
     return (
       <Link href={`/work/${work.id}`}>
         <button

@@ -47,7 +47,7 @@ export const About = () => {
                   "A fourth-year university student (as of March 2025) in Japan.",
                 ],
             [
-              "情報系．おおよそプログラマー",
+              "情報系。おおよそプログラマー",
               "Specializing in information technology, roughly a programmer.",
             ],
             [
@@ -55,7 +55,7 @@ export const About = () => {
               "Researching graphs in an algorithm-focused lab.",
             ],
             [
-              "すきなこと：考えること．読書",
+              "すきなこと：考えること。読書",
               "Favorite activities: Thinking, reading.",
             ],
             [

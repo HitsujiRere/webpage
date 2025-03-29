@@ -1,14 +1,13 @@
 export type Work = {
   id: string;
   name: string;
-  explain?: string;
-  hasDetailPage: boolean;
-  charge?: string;
-  language?: string;
-  framework?: string;
-  feeling?: string;
-  linkWork?: string;
-  linkGitHub?: string;
+  explain: string;
   coverImage?: string;
-  images?: string[];
+  details?: {
+    explains: string[];
+    technologies?: string[];
+    linkForWork?: string;
+    linkForRepository?: string;
+    images?: string[];
+  };
 };

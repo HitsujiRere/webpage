@@ -14,7 +14,7 @@ export default async function Home({
   const { id } = await params;
 
   const work = works.find((work) => work.id === id);
-  if (work === undefined) {
+  if (work === undefined || work.details === undefined) {
     notFound();
   }
 
@@ -27,25 +27,43 @@ export default async function Home({
             <span className="font-bold text-2xl">{work.name}</span>
           </h1>
 
-          <p className="text-lg">{work.explain}</p>
+          {work.details.explains.map((explain) => (
+            <p key={explain} className="text-lg">
+              {explain}
+            </p>
+          ))}
 
-          <p className="text-lg">{work.feeling}</p>
-
-          {work.charge && <p>担当: {work.charge}</p>}
-          {work.language && <p>Languages: {work.language}</p>}
-          {work.framework && <p>Libraries: {work.framework}</p>}
+          {work.details.technologies && (
+            <div className="flex gap-2">
+              <span>Tech Stack</span>
+              {work.details.technologies.map((technology) => (
+                <span key={technology} className="badge badge-neutral">
+                  {technology}
+                </span>
+              ))}
+            </div>
+            // <p>Tech Stack: {work.details.technologies.join(", ")}</p>
+          )}
 
           <div className="flex gap-4">
-            {work.linkWork && (
-              <a href={work.linkGitHub} target="_blank" rel="noreferrer">
+            {work.details.linkForWork && (
+              <a
+                href={work.details.linkForWork}
+                target="_blank"
+                rel="noreferrer"
+              >
                 <button type="button" className="btn">
                   <PiLink />
                   Website
                 </button>
               </a>
             )}
-            {work.linkGitHub && (
-              <a href={work.linkGitHub} target="_blank" rel="noreferrer">
+            {work.details.linkForRepository && (
+              <a
+                href={work.details.linkForRepository}
+                target="_blank"
+                rel="noreferrer"
+              >
                 <button type="button" className="btn">
                   <PiGithubLogo />
                   GitHub
@@ -54,9 +72,9 @@ export default async function Home({
             )}
           </div>
 
-          {work.images && (
+          {work.details.images && (
             <Carousel options={{ loop: true }}>
-              {work.images.map((image, index) => (
+              {work.details.images.map((image, index) => (
                 <Image
                   key={image}
                   src={image}
