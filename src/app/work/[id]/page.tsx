@@ -1,6 +1,8 @@
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { PiGithubLogo, PiLink } from "react-icons/pi";
 import works from "~/assets/works.json";
+import { Carousel } from "~/components/Carousel";
 
 type HomeParams = {
   id: string;
@@ -48,6 +50,20 @@ export default async function Home({
               </a>
             )}
           </div>
+
+          {work.images && (
+            <Carousel options={{ loop: true }}>
+              {work.images.map((image, index) => (
+                <Image
+                  key={image}
+                  src={image}
+                  alt={`Image ${index}`}
+                  fill
+                  className="object-contain"
+                />
+              ))}
+            </Carousel>
+          )}
         </div>
       </div>
     </main>
