@@ -16,7 +16,10 @@ export const SkillCard = ({ href, ...props }: SkillCardProps) => {
       <a href={href} target="_blank" rel="noreferrer">
         <button
           type="button"
-          className={classNames(baseClassName, "link no-underline")}
+          className={classNames(
+            baseClassName,
+            "link hover:-translate-y-1 no-underline transition-transform",
+          )}
         >
           <SkillCardBody {...props} />
         </button>

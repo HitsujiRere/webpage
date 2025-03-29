@@ -4,6 +4,12 @@
   themes: dim --default;
 }
 
+@layer override {
+  .card-lg .card-body {
+    @apply max-lg:[--card-p:1rem];
+  }
+}
+
 @layer components {
   .embla {
     overflow: hidden;

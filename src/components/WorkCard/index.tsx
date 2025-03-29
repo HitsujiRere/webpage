@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import Link from "next/link";
 import type { Work } from "~/types/Work";
 import { WorkCardBody } from "./components/WorkCardBody";
@@ -7,12 +8,17 @@ export type WorkCardProps = {
 };
 
 export const WorkCard = ({ work }: WorkCardProps) => {
+  const baseClassName = "card card-sm h-full w-full bg-base-300";
+
   if (work.hasDetailPage) {
     return (
       <Link href={`/work/${work.id}`}>
         <button
           type="button"
-          className="card card-sm link h-full w-full bg-base-300 no-underline"
+          className={classNames(
+            baseClassName,
+            "link hover:-translate-y-1 no-underline transition-transform",
+          )}
         >
           <WorkCardBody work={work} />
         </button>
@@ -21,7 +27,7 @@ export const WorkCard = ({ work }: WorkCardProps) => {
   }
 
   return (
-    <div className="card card-sm h-full w-full bg-base-300">
+    <div className={baseClassName}>
       <WorkCardBody work={work} />
     </div>
   );

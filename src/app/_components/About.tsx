@@ -9,6 +9,7 @@ export const About = () => {
       <div className="card-body @container gap-4">
         <div className="flex flex-wrap justify-between gap-2">
           <h1 className="flex items-baseline gap-2">
+            <span className="font-bold text-2xl">#</span>
             <span className="font-bold text-2xl">ひつじれれ</span>
             <span className="font-bold text-xl">@hitsujirere</span>
           </h1>
