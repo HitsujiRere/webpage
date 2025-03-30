@@ -1,5 +1,55 @@
 [
   {
+    "id": "my-webpage-v6",
+    "name": "My Portfolio v6",
+    "explain": "自分のウェブページ ver.6",
+    "coverImage": "/works-img/my-webpage/v6.png",
+    "details": {
+      "explains": [
+        "自分についてや、今まで作った作品をまとめたウェブページ Version.6です。（あなたが見ているこのサイト！）",
+        "全体の見た目を整え、より見やすくかっこよくしました。"
+      ],
+      "technologies": [
+        "Next.js",
+        "React",
+        "Typescript",
+        "Tailwind CSS",
+        "daisy UI"
+      ],
+      "images": ["/works-img/my-webpage/v6.png"]
+    }
+  },
+  {
+    "id": "lol-team-balancer",
+    "name": "LoLチームバランサー",
+    "explain": "LoLのチームを良い感じに分けてくれやつ",
+    "coverImage": "/works-img/lol-team-balancer.png",
+    "details": {
+      "explains": [
+        "League of Legendsのカスタムゲームのチーム分けを行えます。",
+        "既存のものと異なり、聞き専チェックボタンやおすすめチーム分け、並び替え機能が付いています。"
+      ],
+      "technologies": ["Next.js", "React", "Typescript", "Tailwind CSS"],
+      "linkForWork": "https://lol-team-balancer.vercel.app",
+      "linkForRepository": "https://github.com/HitsujiRere/lol-team-balancer",
+      "images": ["/works-img/lol-team-balancer.png"]
+    }
+  },
+  {
+    "id": "auto-term-setter-for-lms",
+    "name": "Auto Term Setter for LMS",
+    "explain": "LMSコース/履修時間割表の学期を自動設定するChrome拡張",
+    "coverImage": "/works-img/auto-term-setter-for-lms.png",
+    "details": {
+      "explains": [
+        "弊学のLMSコースもしくは履修時間割表の学期選択欄を自動で設定してくれるChrome拡張です。"
+      ],
+      "technologies": ["JavaScript"],
+      "linkForRepository": "https://github.com/HitsujiRere/AutoTermSetterForLMS",
+      "images": ["/works-img/auto-term-setter-for-lms.png"]
+    }
+  },
+  {
     "id": "my-webpage-v5",
     "name": "My Portfolio v5",
     "explain": "自分のウェブページ ver.5",
@@ -85,14 +135,14 @@
   {
     "id": "logic-connect-block",
     "name": "Logic Connect Block",
-    "explain": "学校のシステム設計演習にてチーム制作した、論理回路を直観的に組み立てられる「ブロック」と、AtTinyブロック用のプログラムを自動生成できる「Webシミュレータ」です。",
+    "explain": "論理回路を組み立てられる「ブロック」と、自由なブロックを生み出せる「Webシミュレータ」",
     "coverImage": "/works-img/LogicConnectBlock/cover.jpg",
     "details": {
       "explains": [
-        "学校のシステム設計演習にてチーム制作した、論理回路を直観的に組み立てられる「ブロック」と、AtTinyブロック用のプログラムを自動生成できる「Webシミュレータ」です。",
+        "学校のシステム設計演習にてチーム制作した、実際に論理回路を直観的に組み立てられる「ブロック」と、AtTinyブロック用のプログラムを自動生成できる「Webシミュレータ」です。",
         "3人でのチーム制作でしたが、それぞれの長所を活かすことができ、当初の計画よりも非常に良いものを生み出すことができ、とても楽しかったです。"
       ],
-      "technologies": ["C#", "JavaScript", "Unity", "WebAsembly"],
+      "technologies": ["C#", "JavaScript", "Unity"],
       "linkForWork": "https://hitsujirere.github.io/LogicConnectBlockSim/",
       "linkForRepository": "https://github.com/HitsujiRere/LogicConnectBlockSim",
       "images": [
@@ -145,6 +195,8 @@
     "name": "おしゃべる",
     "explain": "自由な声とおしゃべりできるスマートスピーカー",
     "coverImage": "/works-img/oshaberu/logo.png",
+    "coverImageFit": "contain",
+    "coverImageBackground": "white",
     "details": {
       "explains": [
         "自由な声とおしゃべりできるスマートスピーカーの追加コンテンツです。",
@@ -180,6 +232,7 @@
     "name": "Learn Processing more",
     "explain": "部内用の発展的なProcessingの解説",
     "coverImage": "/works-img/LearnProcessing.png",
+    "coverImageFit": "contain",
     "details": {
       "explains": [
         "部内用の発展的なProcessingの解説です。",
@@ -199,7 +252,9 @@
     "id": "shimale",
     "name": "shimale",
     "explain": "",
-    "coverImage": "/works-img/shimale_logo.png"
+    "coverImage": "/works-img/shimale_logo.png",
+    "coverImageFit": "contain",
+    "coverImageBackground": "white"
   },
   {
     "id": "siritori-vs",

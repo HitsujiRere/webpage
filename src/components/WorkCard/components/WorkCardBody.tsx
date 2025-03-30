@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import Image from "next/image";
 import type { Work } from "~/types/Work";
 
@@ -13,7 +14,13 @@ export const WorkCardBody = ({ work }: WorkCardBodyProps) => {
           <Image
             src={work.coverImage}
             alt={work.name}
-            className="object-cover hover:object-contain"
+            className={classNames({
+              "object-cover object-top":
+                work.coverImageFit === "cover" ||
+                work.coverImageFit === undefined,
+              "object-contain object-center": work.coverImageFit === "contain",
+              "bg-white": work.coverImageBackground === "white",
+            })}
             fill
           />
         )}

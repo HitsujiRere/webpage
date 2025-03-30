@@ -3,6 +3,8 @@ export type Work = {
   name: string;
   explain: string;
   coverImage?: string;
+  coverImageFit?: "cover" | "contain";
+  coverImageBackground?: "transparent" | "white";
   details?: {
     explains: string[];
     technologies?: string[];
