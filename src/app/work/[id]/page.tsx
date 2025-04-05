@@ -92,5 +92,5 @@ export default async function Home({
 }
 
 export async function generateStaticParams(): Promise<HomeParams[]> {
-  return works.map((work) => ({ id: work.id }));
+  return works.filter((work) => work.details).map((work) => ({ id: work.id }));
 }
