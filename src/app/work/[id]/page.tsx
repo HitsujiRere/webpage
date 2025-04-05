@@ -42,7 +42,6 @@ export default async function Home({
                 </span>
               ))}
             </div>
-            // <p>Tech Stack: {work.details.technologies.join(", ")}</p>
           )}
 
           <div className="flex gap-4">

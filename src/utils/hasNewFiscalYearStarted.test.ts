@@ -2,7 +2,7 @@ import { hasNewFiscalYearStarted } from "./hasNewFiscalYearStarted";
 
 describe("hasNewFiscalYearStarted", () => {
   afterEach(() => {
-    jest.useRealTimers(); // テスト後にタイマーを元に戻す
+    jest.useRealTimers();
   });
 
   test("今日が 2025/04/01 ならば true", () => {

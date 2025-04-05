@@ -13,7 +13,6 @@ export type TimelineProps = {
 export const Timeline = ({ events }: TimelineProps) => {
   return (
     <ul className="timeline @max-2xl:timeline-vertical justify-center @max-2xl:[--timeline-col-start:4rem]">
-      {/* <ul className="timeline justify-center"> */}
       {events.map((event, index) => (
         <li key={event.time}>
           {index > 0 && <hr />}
